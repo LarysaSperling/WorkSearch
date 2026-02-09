@@ -60,3 +60,31 @@
 }
 
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .nav {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .nav {
+    display: none; 
+  }
+
+  .actions {
+    gap: 12px;
+  }
+
+  .login {
+    padding: 8px 14px;
+  }
+}
+
