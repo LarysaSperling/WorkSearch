@@ -38,13 +38,18 @@ export default function Footer() {
           Популярные города
         </h3>
 
-        <div className={styles.cities}>
-          {cities.map((city, index) => (
-            <a key={index} href="#">
-              {city}
-            </a>
-          ))}
-        </div>
+       <div className={styles.cities}>
+  {cities.map((city, index) => (
+    <a
+      key={index}
+      href={`/jobs?city=${city}`}
+      onClick={(e) => e.preventDefault()}
+    >
+      {city}
+    </a>
+  ))}
+</div>
+
 
        
         <div className={styles.line}></div>
@@ -58,13 +63,20 @@ export default function Footer() {
           </div>
 
     
-          <div className={styles.socials}>
-            {socials.map((soc) => (
-              <a key={soc.id} href={soc.link}>
-                <img src={soc.icon} alt="" />
-              </a>
-            ))}
-          </div>
+         <div className={styles.socials}>
+  {socials.map((soc) => (
+    <a
+      key={soc.id}
+      href={soc.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={(e) => e.preventDefault()}
+    >
+      <img src={soc.icon} alt="social icon" />
+    </a>
+  ))}
+</div>
+
 
         </div>
 
