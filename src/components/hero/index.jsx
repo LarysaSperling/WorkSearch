@@ -19,34 +19,38 @@ export default function Hero() {
         </h1>
 
       
-        <form
-          className={styles.search}
-          onSubmit={(e) => e.preventDefault()}
-        >
-         
-          <div className={styles.field}>
-            <img src={searchIcon} alt="" />
-            <input
-              type="text"
-              placeholder="Должность или компания"
-            />
-          </div>
+      <form
+  className={styles.search}
+  onSubmit={(e) => e.preventDefault()}
+>
+  
+  <div className={styles.field}>
+    <img src={searchIcon} alt="" />
+    <input
+      type="text"
+      id="job"
+      name="job"
+      placeholder="Должность или компания"
+    />
+  </div>
 
-          <div className={styles.divider}></div>
+  <div className={styles.divider}></div>
 
-        
-          <div className={styles.field}>
-            <img src={pinIcon} alt="" />
-            <input
-              type="text"
-              placeholder="Город, Страна"
-            />
-          </div>
+  <div className={styles.field}>
+    <img src={pinIcon} alt="" />
+    <input
+      type="text"
+      id="location"
+      name="location"
+      placeholder="Город, Страна"
+    />
+  </div>
 
-          <button type="submit">
-            Поиск
-          </button>
-        </form>
+  <button type="submit">
+    Поиск
+  </button>
+</form>
+
 
       </div>
     </section>
