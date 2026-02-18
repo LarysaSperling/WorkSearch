@@ -62,7 +62,14 @@
 
 
 .search button {
-  width: 170px;
+  min-width: 170px;   
+  padding: 0 24px;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+
   height: 100%;
   border: none;
   background: #243c54;
@@ -71,7 +78,6 @@
   font-weight: 600;
   cursor: pointer;
 }
-
 
 .bg {
  position: absolute;
